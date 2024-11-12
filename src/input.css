@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: "vazir-Light";
+        src: url("../fonts/vasir/Vazirmatn-Light.woff2");
+    }
+    @font-face {
+        font-family: "vazir-Regular";
+        src: url('../fonts/vasir/Vazirmatn-Regular.woff2');
+    }
+    @font-face {
+        font-family: "vazir-Medium";
+        src: url('../fonts/vasir/Vazirmatn-Medium.woff2');
+    }
+    @font-face {
+        font-family: "vazir-Bold";
+        src: url('../fonts/vasir/Vazirmatn-Bold.woff2');
+    }
+    @font-face {
+        font-family: "vazir-ExtraBold";
+        src: url(../fonts/vasir/Vazirmatn-ExtraBold.woff2);
+    }
+}
+
+@layer components{
+    .invisible{
+        display: none;
+    }
+    .visitable{
+        display: block;
+    }
+}
