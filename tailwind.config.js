@@ -14,6 +14,10 @@ module.exports = {
         "vazir-Bold":"vazir-Bold",
         "vazir-ExtraBold":"vazir-ExtraBold"
       },
+      boxShadow:{
+        "pink":'0px 6px 0px 0px rgba(250,41,100,1)',
+        "dark":'0px 6px 0px 0px rgba(45,57,75,1)',
+      },
     },
   },
   plugins: [],
