@@ -1,10 +1,12 @@
 const menuIcon = document.querySelector('.bars__icon');
 const navbar = document.querySelector('.navbar')
-
+const slider = document.querySelector('.swiper-slide');
 // Menu Handler
 menuIcon.addEventListener('click', () => {
     navbar.classList.toggle('invisible');
 });
+
+
 
 // Persianization of numbers
 const timeElement = document.querySelector('.time__open');
