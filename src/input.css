@@ -32,6 +32,11 @@
     .visitable{
         display: block;
     }
+
+    .ourService__icon-hover{
+        top: 5rem;
+        right: 50rem;
+    }
     
 }
 

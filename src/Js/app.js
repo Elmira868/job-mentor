@@ -34,10 +34,13 @@ const svgBackground = document.querySelector('.ourService__background');
 
 // When the mouse hovers over the element
 svgBackground.addEventListener('mouseenter', () => {
-  svgBackground.setAttribute('src','../Images/our service pink.svg');
+  svgBackground.setAttribute('src','../Images/our service background pink.svg');
+
   });
   
 // When the mouse moves away from the element
   svgBackground.addEventListener('mouseleave', () => {
     svgBackground.setAttribute('src','../Images/our service background.svg');
+
+    
   });
