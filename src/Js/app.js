@@ -26,6 +26,18 @@ function formatNumberInElement(element) {
         console.log("مقدار عددی معتبر نیست.");
     }
 }
-
 if (timeElement) formatNumberInElement(timeElement);
 if (timeElement2) formatNumberInElement(timeElement2);
+
+// Change Background Our Service
+const svgBackground = document.querySelector('.ourService__background');
+
+// When the mouse hovers over the element
+svgBackground.addEventListener('mouseenter', () => {
+  svgBackground.setAttribute('src','../Images/our service pink.svg');
+  });
+  
+// When the mouse moves away from the element
+  svgBackground.addEventListener('mouseleave', () => {
+    svgBackground.setAttribute('src','../Images/our service background.svg');
+  });
