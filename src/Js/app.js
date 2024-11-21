@@ -30,17 +30,17 @@ if (timeElement) formatNumberInElement(timeElement);
 if (timeElement2) formatNumberInElement(timeElement2);
 
 // Change Background Our Service
-const svgBackground = document.querySelector('.ourService__background');
+let svgBackground = document.querySelectorAll('.ourService__background');
 
-// When the mouse hovers over the element
-svgBackground.addEventListener('mouseenter', () => {
-  svgBackground.setAttribute('src','../Images/our service background pink.svg');
-
+// For each element in the svgBackground collection
+svgBackground.forEach((element) => {
+  // When the mouse hovers over the element
+  element.addEventListener('mouseenter', () => {
+    element.setAttribute('src', '../Images/our service background pink.svg');
   });
-  
-// When the mouse moves away from the element
-  svgBackground.addEventListener('mouseleave', () => {
-    svgBackground.setAttribute('src','../Images/our service background.svg');
 
-    
+// When the mouse is removed from the plot
+  element.addEventListener('mouseleave', () => {
+    element.setAttribute('src', '../Images/our service background.svg');
   });
+});
