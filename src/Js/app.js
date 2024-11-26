@@ -47,12 +47,15 @@ svgBackground.forEach((element) => {
 
 
 const teamContainer = document.querySelector('.team__container');
+
+// Member Array
 const memberTeam = [
   {id:1, fullName:'رضا احمدی', titleJob:'مدیرمالی',desc:'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و ', photo:'../Images/team-2.webp'},
   {id:2, fullName:'مهسا رحیمی', titleJob:'مدیر اجرایی',desc:'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و ',photo:'../Images/team-1.jpeg'},
   {id:3, fullName:'علی صباحی', titleJob:'مشاور',desc:'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و ',photo:'../Images/team-3.webp'},
 ];
 
+// Create Member Box
 memberTeam.forEach(member => {
   teamContainer.insertAdjacentHTML('beforeend', `
     <div class="relative group mt-4 md:mt-0">
@@ -86,3 +89,43 @@ memberTeam.forEach(member => {
   `);
 });
 
+
+const cartContainer = document.querySelector('.cart__container');
+
+const cartInfos = [
+
+{image:'../Images/advisor.webp',titleNews:'ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ', author:'بهزاد اسلامی', tag:'مشاوره' , descCart:'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و '},
+{image:'../Images/work-pc.webp',titleNews:'ورم ایپسوم متن ساختگی بام ', author:'لیلا احمدی', tag:'هوش مصنوعی و مشاوره' , descCart:'لورم ایپسوم متن ساختگی با تولید، و '},
+{image:'../Images/phone-image.webp',titleNews:'ورم ایپسوم متن ساختگی ', author:'مهسا رجبی', tag:'شبکه اجتماعی و مشاوره' , descCart:'لورم ایپ لورم ایپسوم متن '},
+
+]
+
+cartInfos.forEach(cartInfo =>{
+  cartContainer.insertAdjacentHTML('beforeend', `
+     <div class=" md:w-fit w-full mt-5 border-2 border-primary-pink">
+            <img class="w-full h-52 mb-2.5 md:mb-5" src=${cartInfo.image} alt=${cartInfo.titleNews}>
+            <h3 class="flex flex-wrap mr-2 ml-2 text-sm md:text-base font-vazir-Medium text-primary-blue hover:text-primary-pink transition-all delay-100">${cartInfo.titleNews}<h3>
+<!-- Author And Tag Cart -->
+            <div class="flex mt-4 pr-2.5 md:pr-5 mb-1.5 md:mb-3">
+<div class="flex">
+  <svg class="w-5 h-5 text-primary-blue">
+    <use href="#user"></use>
+    <span class="text-primary-blue text-sm font-vazir-Light mr-1.5">${cartInfo.author}</span>
+  </svg>
+</div>
+
+<div class="h-6 w-0.5 ml-2 mr-2 border bg-primary-pink border-primary-pink"></div>
+
+<div class="flex">
+  <svg class="w-5 h-5 text-primary-blue">
+    <use href="#tag"></use>
+  </svg>
+  <span class="text-primary-blue text-sm font-vazir-Light mr-1.5">${cartInfo.tag}</span>
+</div>
+            </div>
+            <!-- Description Cart -->
+<p class="text-gray-500 text-sm md:text-base font-vazir-Regular w-56 md:w-80 mr-2 ml-2">
+  ${cartInfo.descCart}
+</p>
+    `)
+})
