@@ -38,7 +38,9 @@
         right: 50rem;
     }
 
-    
+    textarea{
+        resize: none;
+    }
 }
 
 
