@@ -596,12 +596,20 @@ textarea{
   visibility: hidden;
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: sticky;
 }
 
 .inset-0 {
@@ -668,6 +676,10 @@ textarea{
   top: 12rem;
 }
 
+.top-5 {
+  top: 1.25rem;
+}
+
 .top-8 {
   top: 2rem;
 }
@@ -676,8 +688,16 @@ textarea{
   top: 2.1rem;
 }
 
+.top-6 {
+  top: 1.5rem;
+}
+
 .z-0 {
   z-index: 0;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .z-50 {
@@ -748,8 +768,16 @@ textarea{
   margin-right: 10rem;
 }
 
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mt-1\.5 {
+  margin-top: 0.375rem;
 }
 
 .mt-10 {
@@ -786,6 +814,34 @@ textarea{
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mr-7 {
+  margin-right: 1.75rem;
+}
+
+.mr-11 {
+  margin-right: 2.75rem;
+}
+
+.mr-20 {
+  margin-right: 5rem;
+}
+
+.mr-32 {
+  margin-right: 8rem;
+}
+
+.mr-28 {
+  margin-right: 7rem;
 }
 
 .line-clamp-2 {
@@ -850,6 +906,14 @@ textarea{
   height: 1.5rem;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-72 {
+  height: 18rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -870,6 +934,10 @@ textarea{
   width: 0.75rem;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -884,6 +952,10 @@ textarea{
 
 .w-56 {
   width: 14rem;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-72 {
@@ -906,12 +978,24 @@ textarea{
   width: 100%;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -979,6 +1063,10 @@ textarea{
   row-gap: 0.5rem;
 }
 
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
 .divide-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
@@ -996,6 +1084,10 @@ textarea{
 
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .border {
@@ -1185,12 +1277,30 @@ textarea{
   color: rgb(82 82 91 / var(--tw-text-opacity));
 }
 
+.placeholder-primary-blue::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(45 57 75 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-primary-blue::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(45 57 75 / var(--tw-placeholder-opacity));
+}
+
 .opacity-0 {
   opacity: 0;
 }
 
+.opacity-35 {
+  opacity: 0.35;
+}
+
 .opacity-60 {
   opacity: 0.6;
+}
+
+.opacity-90 {
+  opacity: 0.9;
 }
 
 .shadow-pink {
@@ -1281,6 +1391,11 @@ textarea{
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-primary-blue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 57 75 / var(--tw-bg-opacity));
 }
 
 .hover\:text-primary-pink:hover {
@@ -1419,6 +1534,10 @@ textarea{
     left: 12rem;
   }
 
+  .md\:right-16 {
+    right: 4rem;
+  }
+
   .md\:right-20 {
     right: 5rem;
   }
@@ -1465,6 +1584,10 @@ textarea{
 
   .md\:top-\[53px\] {
     top: 53px;
+  }
+
+  .md\:right-10 {
+    right: 2.5rem;
   }
 
   .md\:m-0 {
@@ -1515,6 +1638,10 @@ textarea{
     margin-left: 1rem;
   }
 
+  .md\:mr-0 {
+    margin-right: 0px;
+  }
+
   .md\:mr-10 {
     margin-right: 2.5rem;
   }
@@ -1527,8 +1654,8 @@ textarea{
     margin-right: 12rem;
   }
 
-  .md\:mr-\[27rem\] {
-    margin-right: 27rem;
+  .md\:mr-52 {
+    margin-right: 13rem;
   }
 
   .md\:mt-0 {
@@ -1563,6 +1690,10 @@ textarea{
     margin-top: 5rem;
   }
 
+  .md\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .md\:mt-4 {
     margin-top: 1rem;
   }
@@ -1575,16 +1706,8 @@ textarea{
     margin-top: 1.75rem;
   }
 
-  .md\:mr-40 {
-    margin-right: 10rem;
-  }
-
-  .md\:mr-44 {
-    margin-right: 11rem;
-  }
-
-  .md\:mr-52 {
-    margin-right: 13rem;
+  .md\:ml-36 {
+    margin-left: 9rem;
   }
 
   .md\:line-clamp-3 {
@@ -1596,6 +1719,10 @@ textarea{
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-10 {
@@ -1622,12 +1749,24 @@ textarea{
     height: 2rem;
   }
 
+  .md\:h-9 {
+    height: 2.25rem;
+  }
+
+  .md\:h-80 {
+    height: 20rem;
+  }
+
   .md\:w-10 {
     width: 2.5rem;
   }
 
   .md\:w-36 {
     width: 9rem;
+  }
+
+  .md\:w-44 {
+    width: 11rem;
   }
 
   .md\:w-5 {
@@ -1658,6 +1797,10 @@ textarea{
     width: 20rem;
   }
 
+  .md\:w-9 {
+    width: 2.25rem;
+  }
+
   .md\:w-96 {
     width: 24rem;
   }
@@ -1666,17 +1809,21 @@ textarea{
     width: 10%;
   }
 
+  .md\:w-\[50rem\] {
+    width: 50rem;
+  }
+
   .md\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
   }
 
-  .md\:w-\[50rem\] {
-    width: 50rem;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1765,10 +1912,6 @@ textarea{
     line-height: 1.25rem;
   }
 
-  .md\:has-\[input\]\:w-\[70rem\]:has(input) {
-    width: 70rem;
-  }
-
   .md\:has-\[span\]\:text-3xl:has(span) {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1816,6 +1959,10 @@ textarea{
     margin-right: 6rem;
   }
 
+  .lg\:mr-80 {
+    margin-right: 20rem;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
@@ -1832,20 +1979,20 @@ textarea{
     margin-top: 6rem;
   }
 
-  .lg\:mr-\[27rem\] {
-    margin-right: 27rem;
+  .lg\:mr-10 {
+    margin-right: 2.5rem;
   }
 
-  .lg\:mr-60 {
-    margin-right: 15rem;
+  .lg\:mr-36 {
+    margin-right: 9rem;
   }
 
-  .lg\:mr-72 {
-    margin-right: 18rem;
+  .lg\:mr-32 {
+    margin-right: 8rem;
   }
 
-  .lg\:mr-80 {
-    margin-right: 20rem;
+  .lg\:mr-28 {
+    margin-right: 7rem;
   }
 
   .lg\:line-clamp-none {
@@ -1871,8 +2018,8 @@ textarea{
     width: 24rem;
   }
 
-  .lg\:w-\[60rem\] {
-    width: 60rem;
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-nowrap {
@@ -1910,10 +2057,6 @@ textarea{
   .lg\:hover\:text-white:hover {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
-  .lg\:has-\[input\]\:w-\[70rem\]:has(input) {
-    width: 70rem;
   }
 }
 
